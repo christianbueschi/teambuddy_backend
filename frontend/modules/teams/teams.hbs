@@ -1,0 +1,42 @@
+<div class="page-centered teams g-layout-main">
+    <div ng-controller="teamController" class="g-row">
+        <div class="g-col g-col-1">
+            <h2>Alle Teams</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Beschreibung</th>
+                    <th></th>
+                </tr>
+                <tr class="checkbox" data-ng-repeat="team in teams">
+                    <td>{[{ team.name }]}</td>
+                    <td>{[{ team.description }]}</td>
+                    <td>
+                        <button data-ng-click="deleteTeam(team._id)">delete</button>
+                    </td>
+                    <td>
+                        <button data-ng-click="editTeam(team._id)">edit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="g-col g-col-1">
+            <h2>Neues Team</h2>
+
+            <form action="#">
+                <div>
+                    <label>Team</label>
+                    <input type="text" data-ng-model="team.name">
+                </div>
+
+                <div>
+                    <label>Beschreibung</label>
+                    <input type="text" data-ng-model="team.description">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg" data-ng-click="createTeam()">Add</button>
+
+            </form>
+        </div>
+    </div>
+</div>

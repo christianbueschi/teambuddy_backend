@@ -1,0 +1,57 @@
+{
+	"teambuddy": [
+		{
+			"_id": 1,
+			"name": "teamname",
+			"description": "teamdescription",
+			"members": [
+				{
+					"-_id": 1,
+					"firstName": "firstName",
+					"lastName": "lastName",
+					"image": "imgUrl",
+					"role": "role",
+					"number": "number",
+					"age": 12,
+					"phone": 123,
+					"email": "email",
+					"password": "pw",
+					"state": "state"
+				},
+				{
+					"-_id": 2,
+					"firstName": "firstName",
+					"lastName": "lastName",
+					"image": "imgUrl",
+					"role": "role",
+					"number": "number",
+					"age": 12,
+					"phone": 123,
+					"email": "email",
+					"password": "pw",
+					"state": "state"
+				}
+			],
+			"events": [
+				{
+					"_id": 1,
+					"title": "title",
+					"subtitle": "subtitle",
+					"description": "description",
+					"start": 123,
+					"end": 123,
+					"location": "location"
+				},
+				{
+					"_id": 1,
+					"title": "title",
+					"subtitle": "subtitle",
+					"description": "description",
+					"start": 123,
+					"end": 123,
+					"location": "location"
+				}
+			]
+		}
+	]
+}

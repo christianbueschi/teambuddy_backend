@@ -1,0 +1,65 @@
+<div class="page-centered events">
+    <div ng-controller="eventController">
+
+        <h2>Wähle ein Team</h2>
+
+        <select data-ng-model="selectedTeam" data-ng-change="changeTeam()"
+                data-ng-options="team.name for team in teams">
+            <option value="">-- Wähle Team --</option>
+        </select>
+
+
+        <div data-ng-repeat="team in teams" data-ng-if="team.name == selectedTeam.name">
+
+            <h2>Alle Events</h2>
+            <table>
+                <tr data-ng-repeat="event in team.events">
+                    <td>{[{ event.title }]}</td>
+                    <td>{[{ event.description }]}</td>
+                    <td>
+                        <button data-ng-click="deleteEvent(team._id, event._id)">delete</button>
+                    </td>
+                    <td>
+                        <button data-ng-click="editEvent(team._id, event._id)">edit</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Füge Event hinzu</h2>
+
+            <form action="#">
+
+                <div>
+                    <label>Titel</label>
+                    <input type="text" data-ng-model="event.title"/>
+                </div>
+
+                <div>
+                    <label>Beschreibung</label>
+                    <input type="text" data-ng-model="event.description"/>
+                </div>
+
+                <div>
+                    <label>Ort</label>
+                    <input type="text" data-ng-model="event.location"/>
+                </div>
+
+                <div>
+                    <label>Beginn</label>
+                    <input type="text" data-ng-model="event.from"/>
+                </div>
+
+                <div>
+                    <label>Ende</label>
+                    <input type="text" data-ng-model="event.to"/>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg" data-ng-click="createEvent(event, team._id)">Add
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>

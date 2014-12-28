@@ -1,0 +1,17 @@
+{
+  "xtcSrc": {
+    "type": "npm",
+    "src": "xtc@0.8.0-beta8"
+  },
+  "xtcVersion": "0.8.0-beta8",
+  "name": "teambuddy",
+  "repositoryUri": null,
+  "repositoryBranch": null,
+  "needServer": true,
+  "needBuild": true,
+  "enableSprites": false,
+  "extendedCustomization": false,
+  "customModuleTemplatePath": null,
+  "templateExtension": ".hbs",
+  "siteName": "TeamBuddy"
+}

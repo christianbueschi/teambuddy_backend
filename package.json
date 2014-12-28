@@ -1,0 +1,19 @@
+{
+  "name": "teambuddy",
+  "version": "0.0.0",
+  "private": true,
+  "repository": "",
+  "dependencies": {
+    "xtc": "0.8.0-beta8",
+    "generator-xtc": "*",
+    "hipsum": "~0.2.0",
+	"mongodb": ">= 0.9.6-7",
+	"angular": "1.2.19"
+  },
+  "bundledDependencies": [
+    "generator-xtc"
+  ],
+  "main": "server.js",
+  "engines": { "node" : ">=0.10.0" },
+  "configPath": "config/"
+}

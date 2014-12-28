@@ -1,0 +1,15 @@
+// Never commit authentication data to a public repository!
+{
+	//  Default html > head > title is constructed from this
+	"siteName": "TeamBuddy"
+	//,"allowAuthBypassForIpRanges": true
+	//,"annotateModules": {
+	//	"production": true
+	//}
+	//,"enableModuleTesting": true
+	//  To construct links to views, modules and layouts in your repository's web UI ("read-only" https .git URI)
+	,"repository": ""
+	,"repositoryBranch": ""
+	
+
+}
